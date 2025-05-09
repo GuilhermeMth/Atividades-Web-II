@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Author extends Model
@@ -15,3 +16,5 @@ class Author extends Model
         return $this->hasMany(Book::class);
     }
 }
+
+
