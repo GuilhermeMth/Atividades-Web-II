@@ -10,7 +10,7 @@ use App\Models\Publisher;
  */
 class PublisherFactory extends Factory
 {
-    public function definition(): array
+    public function definition()
     {
         return [
             'name' => $this->faker->unique()->company,

@@ -12,7 +12,7 @@ class CategoryFactory extends Factory
 {
     protected $model = Category::class;
 
-    public function definition(): array
+    public function definition()
     {
         return [
             'name' => $this->faker->unique()->word,
