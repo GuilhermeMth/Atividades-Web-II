@@ -9,3 +9,4 @@
 - **Atividade 01 – Criando um Projeto Novo** – `atividade_01/`
 - **Atividade 02 – Migrations no Laravel** – `atividade_02/`
 - **Atividade 03 – Seeds e Factories no Laravel** – `atividade_03/`
+- **Atividade 04 – Inclusão de Relacionamento N para N Empréstimo** – `atividade_04/`
