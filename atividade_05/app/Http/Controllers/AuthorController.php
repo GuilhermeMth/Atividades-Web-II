@@ -41,7 +41,7 @@ class AuthorController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Author $author)
     {
         return view('authors.show', compact('author'));
     }
@@ -49,7 +49,7 @@ class AuthorController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Author $author)
     {
         return view('authors.edit', compact('author'));
     }
@@ -57,7 +57,7 @@ class AuthorController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Author $author)
     {
         $request->validate([
             'name' => 'required|string|unique:authors,name,' . $id . '|max:255',
@@ -71,7 +71,7 @@ class AuthorController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Author $author)
     {
         $author->delete();
 

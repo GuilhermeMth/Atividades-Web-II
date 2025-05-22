@@ -39,7 +39,7 @@
                         </a>
 
                         <!-- Botão de Excluir -->
-                        <form action="{{ route('authors.destroy', $cauthor) }}" method="POST" style="display: inline;">
+                        <form action="{{ route('authors.destroy', $author) }}" method="POST" style="display: inline;">
                             @csrf
                             @method('DELETE')
                             <button class="btn btn-danger btn-sm" onclick="return confirm('Deseja excluir este autor?')">
