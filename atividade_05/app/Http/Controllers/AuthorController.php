@@ -60,7 +60,7 @@ class AuthorController extends Controller
     public function update(Request $request, Author $author)
     {
         $request->validate([
-            'name' => 'required|string|unique:authors,name,' . $id . '|max:255',
+            'name' => 'required|string|unique:authors,name,' . $author->id . '|max:255',
         ]);
 
         $author->update($request->all());
