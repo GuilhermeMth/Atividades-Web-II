@@ -1,5 +1,5 @@
 
-# Atividade Prática 04.1 - Inclusão de Relacionamento N para N Empréstimo
+# Atividade Prática 04 - Inclusão de Relacionamento N para N Empréstimo
 
 ## Objetivo
 

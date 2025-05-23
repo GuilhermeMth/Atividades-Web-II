@@ -1,6 +1,6 @@
 
-# Atividade Prática 04.1 - Inclusão de Relacionamento N para N Empréstimo
+# Atividade Prática 05 - Autenticação, Controllers, Rotas e Views 
 
-## Objetivo
-
-Implementar um relacionamento N para N entre os modelos User e Book para representar o empréstimo de livros. Utilizaremos o modelo de usuário padrão do Laravel (App\Models\User) e criaremos uma tabela intermediária chamada borrowings para registrar os detalhes de cada empréstimo.
+- **Atividade Prática 5.1:** Gerando Autenticação
+- **Atividade Prática 5.2:** Construção do Controller, Rotas e Views para as Entidades Category, Author e Publisher
+- **Atividade Prática 5.5:** Construção do Controller, Rotas e Views para a Entidade Book
