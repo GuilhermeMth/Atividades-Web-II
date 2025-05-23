@@ -1,7 +1,6 @@
 
 # Atividade Prática 05
 
-* Fazer a atividade 5.1 para criar as telas de autenticação.
-* Fazer a atividade 5.2 para criar Controller, Rotas e Views, para a entidade Category.
-* Replicar a tarefa 5.2 para as entidades Authors e Publishers.
-* Fazer atividade 5.5
+## Atividade Prática 5.1: Gerando Autenticação
+## Atividade Prática 5.2: Construção do Controller, Rotas e Views para as Entidades Category, Author e Publisher
+## Atividade Prática 5.5: Construção do Controller, Rotas e Views para a Entidade Book
