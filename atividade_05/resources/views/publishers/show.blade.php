@@ -2,19 +2,19 @@
 
 @section('content')
 <div class="container">
-    <h1 class="my-4">Detalhes da Categoria</h1>
+    <h1 class="my-4">Detalhes da Editora</h1>
 
     <div class="card">
         <div class="card-header">
-            Categoria: {{ $category->name }}
+            Categoria: {{ $publisher>name }}
         </div>
         <div class="card-body">
-            <p><strong>ID:</strong> {{ $category->id }}</p>
-            <p><strong>Nome:</strong> {{ $category->name }}</p>
+            <p><strong>ID:</strong> {{ $publisher->id }}</p>
+            <p><strong>Nome:</strong> {{ $publisher->name }}</p>
         </div>
     </div>
 
-    <a href="{{ route('categories.index') }}" class="btn btn-secondary mt-3">
+    <a href="{{ route('publishers.index') }}" class="btn btn-secondary mt-3">
         <i class="bi bi-arrow-left"></i> Voltar
     </a>
 </div>
