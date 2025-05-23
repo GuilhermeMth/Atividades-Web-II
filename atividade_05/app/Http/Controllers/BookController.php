@@ -10,6 +10,32 @@ use Illuminate\Http\Request;
 
 class BookController extends Controller
 {
+    
+    // implementação do método edit
+    public function edit(Book $book)
+    {
+        $publishers = Publisher::all();
+        $authors = Author::all();
+        $categories = Category::all();
+
+        return view('books.edit', compact('book', 'publishers', 'authors', 'categories'));
+    }
+
+    // implementação do método update
+    public function update(Request $request, Book $book)
+    {
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'publisher_id' => 'required|exists:publishers,id',
+            'author_id' => 'required|exists:authors,id',
+            'category_id' => 'required|exists:categories,id',
+        ]);
+
+        $book->update($request->all());
+
+        return redirect()->route('books.index')->with('success', 'Livro atualizado com sucesso.');
+    }
+
     // Formulário com input de ID
     public function createWithId()
     {
