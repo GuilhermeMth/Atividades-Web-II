@@ -33,7 +33,7 @@ class AuthorController extends Controller
             'name' => 'required|string|unique:authors|max:255',
         ]);
 
-        Category::create($request->all());
+        Author::create($request->all());
 
         return redirect()->route('authors.index')->with('success', 'Author created successfully.');
     }

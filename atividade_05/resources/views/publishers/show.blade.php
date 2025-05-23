@@ -6,7 +6,7 @@
 
     <div class="card">
         <div class="card-header">
-            Categoria: {{ $publisher>name }}
+            Categoria: {{ $publisher->name }}
         </div>
         <div class="card-body">
             <p><strong>ID:</strong> {{ $publisher->id }}</p>
