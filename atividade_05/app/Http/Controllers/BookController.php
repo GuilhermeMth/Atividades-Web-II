@@ -11,6 +11,15 @@ use Illuminate\Http\Request;
 class BookController extends Controller
 {
     
+    public function show(Book $book)
+    {
+        // Carregando autor, editora e categoria do livro com eager loading
+        $book->load(['author', 'publisher', 'category']);
+
+        return view('books.show', compact('book'));
+
+    }
+
     // implementação do método edit
     public function edit(Book $book)
     {
