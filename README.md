@@ -11,3 +11,4 @@
 - **Atividade 03 – Seeds e Factories no Laravel** – `atividade_03/`
 - **Atividade 04 – Inclusão de Relacionamento N para N Empréstimo** – `atividade_04/`
 - **Atividade 05 – Autenticação, Controllers, Rotas e Views** – `atividade_05/`
+- **Atividade 06 – Funcionalidade de Empréstimo de Livro** – `atividade_06/`
